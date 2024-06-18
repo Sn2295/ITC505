@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITC505 Lab 3 - Serving Custom Fonts</title>
+    <style>
+        @font-face {
+            font-family: 'ProtestRevolution-Regular';
+            src: url(fonts/ProtestRevolution-Regular.woff2) format('woff2'),
+            url(fonts/ProtestRevolution-Regular.woff) format('woff'),
+            url(fonts/ProtestRevolution-Regular.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'ProtestRevolution-Regular'; /* Custom font with fallback to web-safe font */
+        }
+
+        .content {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            font-family: 'ProtestRevolution-Regular', Arial, Helvetica, sans-serif; /* Ensure text uses custom font or fallback to web-safe font */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ITC505 Lab 3 - Serving Custom Fonts</h1>
+    </header>
+    <div class="content">
+        <h2>@font-face Rule</h2>
+        <p>This rule in CSS allows us to define a new font family, such as 'ProtestRevolution-Regular'. It specifies where the font files are located (woff2, woff, ttf formats) using URLs. These different formats ensure the font works well on various browsers and systems.</p>
+        
+        <h2>Font Family in Body Style</h2>
+        <p>We set the body of our webpage to use 'ProtestRevolution-Regular' as the main font. If this custom font isn't available on a user's device, the browser will automatically switch to using standard fonts like Arial, Helvetica, or sans-serif.</p>
+        
+        <h2>Deployment</h2>
+        <p>Place the font files in a fonts folder on your server.
+            Upload your HTML file and font files to your web server.
+            Check that your webpage shows the custom font correctly when accessed.
+            This method ensures your custom font is delivered reliably to everyone visiting your webpage.</p>
+    </div>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
