@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Shapes</title>
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center SVGs vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+
+        /* Common styles for animated shapes */
+        .animated-shape {
+            width: 100px;
+            height: 100px;
+            cursor: pointer; /* Changes cursor to pointer on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Star SVG with rotation animation -->
+    <svg class="animated-shape star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <style>
+            .star {
+                transform-origin: center;
+                animation: rotate 3s infinite linear;
+            }
+            @keyframes rotate {
+                0% {
+                    transform: rotate(0);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="#007bff" />
+    </svg>
+
+    <!-- Ball SVG with bouncing animation -->
+    <svg class="animated-shape ball" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <style>
+            .ball {
+                animation: bounce 2s infinite alternate;
+            }
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-30px);
+                }
+            }
+        </style>
+        <circle cx="12" cy="12" r="10" fill="#28a745" />
+    </svg>
+
+    <!-- Square SVG with scaling animation -->
+    <svg class="animated-shape square" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <style>
+            .square {
+                animation: scale 2s infinite alternate;
+            }
+            @keyframes scale {
+                0%, 100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.2);
+                }
+            }
+        </style>
+        <rect x="2" y="2" width="20" height="20" fill="#ffc107" />
+    </svg>
+
+    <!-- Triangle SVG with color change animation -->
+    <svg class="animated-shape triangle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <style>
+            .triangle {
+                animation: color-change 2s infinite alternate;
+            }
+            @keyframes color-change {
+                0%, 100% {
+                    fill: currentColor;
+                }
+                50% {
+                    fill: transparent;
+                }
+            }
+        </style>
+        <polygon points="12 2 22 22 2 22" fill="#dc3545" />
+    </svg>
+
+    <!-- Circle SVG with pulsating animation -->
+    <svg class="animated-shape circle" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <style>
+            .circle {
+                animation: pulsate 1.5s infinite alternate;
+            }
+            @keyframes pulsate {
+                0%, 100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.2);
+                }
+            }
+        </style>
+        <circle cx="12" cy="12" r="10" fill="#6610f2" />
+    </svg>
+</body>
+</html>
