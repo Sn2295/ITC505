@@ -1,18 +1,20 @@
-// JavaScript is used to dynamically create image overlays with descriptions
-
+// Select all image containers and modal elements
 const images = document.querySelectorAll('.image-container');
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modalImg');
+const captionText = document.getElementById('caption');
+const closeModal = document.querySelector('.close');
 
+// Add click event to each image container
 images.forEach(image => {
-    const description = image.querySelector('.overlay').textContent.trim();
-    const imgAlt = image.querySelector('img').getAttribute('alt');
-
-    // Add image description as overlay text
-    image.addEventListener('mouseover', () => {
-        image.querySelector('.overlay').textContent = description;
-    });
-
-    // Restore original alt text on mouseout
-    image.addEventListener('mouseout', () => {
-        image.querySelector('.overlay').textContent = imgAlt;
+    image.addEventListener('click', () => {
+        modal.style.display = "block";
+        modalImg.src = image.querySelector('img').src;
+        captionText.innerHTML = image.querySelector('.overlay').innerHTML;
     });
 });
+
+// Close the modal when the user clicks on (x)
+closeModal.onclick = function() {
+    modal.style.display = "none";
+}
