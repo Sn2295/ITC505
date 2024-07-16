@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Image Gallery</h1>
+    </header>
+    <main>
+        <div class="image-gallery">
+            <div class="image-container">
+                <img src="images/sunset.jpg" alt="Serene beach at sunset">
+                <div class="overlay">Serene beach at sunset with palm trees silhouetted against the sky.</div>
+            </div>
+            <div class="image-container">
+                <img src="images/Air ballon.jpg" alt="Colorful hot air balloons">
+                <div class="overlay">Colorful hot air balloons floating gracefully in the sky during a festive event.</div>
+            </div>
+            <div class="image-container">
+                <img src="images/waterfall1.jpg" alt="Stunning waterfall">
+                <div class="overlay">Stunning waterfall cascading down rugged cliffs in a remote wilderness setting.</div>
+            </div>
+            
+            <div class="image-container">
+                <img src="images/forest1.jpg" alt="Lush green forest">
+                <div class="overlay">Lush green forest with tall trees and a peaceful atmosphere.</div>
+            </div>
+            <div class="image-container">
+                <img src="images/mountain.jpg" alt="Snow-capped mountain">
+                <div class="overlay">Snow-capped mountain peak against a clear blue sky.</div>
+            </div>
+            <div class="image-container">
+                <img src="images/lake.jpg" alt="Calm lake">
+                <div class="overlay">Calm lake surrounded by autumn trees reflecting in the water.</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </main>
+
+    <!-- Modal for viewing larger images -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
