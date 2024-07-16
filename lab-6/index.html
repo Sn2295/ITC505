@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+    </header>
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Check if a Number is Positive, Negative, or Zero</h2>
+        <input type="number" id="numberInput" placeholder="Enter a number">
+        <button onclick="checkNumber()">Check Number</button>
+    </main>
+    <aside class="advertisement">
+        <a href="https://www.amazon.com/Apple-iPhone-256GB-Deep-Purple/dp/B0BYLCFYL1/ref=sr_1_1?crid=34WSSK1OYGZP0&dib=eyJ2IjoiMSJ9.qGDmHMsX2QNMqxrZpp7SFWxhpWdoGAeQp3gBYoeR-W0ICUg59hqQMRhjCi75xKkjb71laqjcEbdgOoNM-p0SYQRM1C_pynp95yhiaKWzYIf_XbNuzG-8nXXzUu0kMD8EwO2QActX7fceWQUk_RVz1Bub1ifKb630x6_Xzq-YToJDGeI5zO_70DVSZGjaNVOPY6tJjxTLYAZVi9tSoJGwXIRl0cKbT8NJXQsFITXNHBU.SGlB2veYwl6p1O7zUF0LrIOY1aTAyWZCTZ9JeDy0RIA&dib_tag=se&keywords=iphone%2B15%2Bpro%2Bmobile&qid=1721098159&sprefix=iphone%2B15%2Bpro%2Bmo%2Caps%2C717&sr=8-1&th=1" target="_blank">
+            <img src="iphone1.jpg" alt="Advertisement">
+        </a>
+        <a href="https://www.amazon.com/dp/B0CHBQTL9Z/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pd_rd_plhdr=t&aref=N4l02KQMY7" target="_blank">
+            <img src="iphone2.jpg" alt="Advertisement">
+
+        </a>
+    </aside>
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+        <p id="addendum"></p>
+    </footer>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
