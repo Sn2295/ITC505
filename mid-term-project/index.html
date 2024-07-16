@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Own Adventure Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Choose Your Own Adventure</h1>
+    </header>
+
+    <main>
+        <div id="story">
+            <!-- Story text will be dynamically updated here -->
+        </div>
+        <div id="choices">
+            <!-- Choices buttons will be dynamically added here -->
+        </div>
+        <div id="image">
+            <!-- Image related to the current stage of the story -->
+            <img id="storyImage" src="" alt="Story Image">
+        </div>
+    </main>
+
+    <footer>
+        <p>Addendum: This project is a 'Choose Your Own Adventure' game implemented using HTML, CSS, and JavaScript.</p>
+    <p>I chose to use a simple structure with arrays of objects to represent each stage of the story, including text, choices, consequences, and images.</p>
+    <p>Challenges faced included managing game state transitions and ensuring the dynamic updating of HTML elements based on user choices.</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
