@@ -6,7 +6,7 @@ const story = [
             { text: "Look around", nextStage: 1 },
             { text: "Stay in bed", nextStage: 2 }
         ],
-        image: "room.jpg"
+        image: "images/room.jpg"
     },
     {
         text: "You find a key on the floor. What next?",
@@ -14,7 +14,7 @@ const story = [
             { text: "Open the door", nextStage: 3 },
             { text: "Ignore the key", nextStage: 4 }
         ],
-        image: "key.jpg"
+        image: "images/key.jpg"
     },
     {
         text: "You hear footsteps approaching. What do you do?",
@@ -22,7 +22,7 @@ const story = [
             { text: "Hide under the bed", nextStage: 5 },
             { text: "Confront the person", nextStage: 6 }
         ],
-        image: "footsteps.jpg"
+        image: "images/footsteps.jpg"
     },
     {
         text: "The door opens to a garden. What do you do?",
@@ -30,32 +30,32 @@ const story = [
             { text: "Explore the garden", nextStage: 7 },
             { text: "Go back inside", nextStage: 8 }
         ],
-        image: "garden.jpg"
+        image: "images/garden.jpg"
     },
     {
         text: "You decide to ignore the key and go back to sleep.",
         choices: [],
-        image: "sleep.jpg"
+        image: "images/sleep.jpg"
     },
     {
         text: "You hide under the bed and wait silently.",
         choices: [],
-        image: "hide.jpg"
+        image: "images/hide.jpg"
     },
     {
         text: "You confront the person and realize it's your friend.",
         choices: [],
-        image: "friend.jpg"
+        image: "images/friend.jpg"
     },
     {
         text: "You explore the garden and find a hidden treasure.",
         choices: [],
-        image: "treasure.jpg"
+        image: "images/treasure.jpg"
     },
     {
         text: "You go back inside and lock the door behind you.",
         choices: [],
-        image: "inside.jpg"
+        image: "images/inside.jpg"
     }
 ];
 
